@@ -8,4 +8,6 @@ Celery and Redis are used in this project to create weekly CRM reports. Celery h
 Install Redis on your system:
 
 sudo apt-get update
+
 sudo apt-get install redis-server
+
