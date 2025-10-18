@@ -9,7 +9,8 @@ app = Celery("crm")
 app.conf.broker_url = "redis://localhost:6379/0"
 
 # Load settings from Django settings with CELERY_ prefix
-app.config_from_object("django.conf:settings", namespace="CELERY")
+app.config_from_object("django.conf:settings", namespace="CELERY") 
 
-# Discover tasks.py in installed apps
+# Discover tasks.py in installed apps 
 app.autodiscover_tasks()
+
