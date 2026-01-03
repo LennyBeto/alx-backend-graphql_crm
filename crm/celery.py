@@ -1,4 +1,4 @@
-import os
+import os 
 from celery import Celery
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "crm.settings")
@@ -13,4 +13,5 @@ app.config_from_object("django.conf:settings", namespace="CELERY")
 
 # Discover tasks.py in installed apps 
 app.autodiscover_tasks()
+
 
