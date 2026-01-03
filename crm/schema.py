@@ -14,7 +14,7 @@ class CustomerType(DjangoObjectType):
         interfaces = (graphene.relay.Node,)
 
 
-class ProductType(DjangoObjectType):
+class ProductType(DjangoObjectType): 
     class Meta:
         model = Product
         filterset_class = ProductFilter
@@ -84,3 +84,4 @@ class Mutation(graphene.ObjectType):
 
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
+
